@@ -3,6 +3,7 @@
 #Browsers
 flatpak install flathub org.mozilla.firefox -y
 flatpak install flathub com.microsoft.Edge -y
+flatpak install flathub io.gitlab.librewolf-community -y
 
 #Media
 flatpak install flathub com.spotify.Client -y
@@ -21,15 +22,20 @@ flatpak install flathub org.videolan.VLC -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub org.gabmus.whatip -y
 flatpak install flathub com.github.unrud.VideoDownloader -y
+flatpak install flathub com.raggesilver.BlackBox -y
+flatpak install flathub nz.mega.MEGAsync -y
 
 #Coding
-
+flatpak install flathub com.visualstudio.code -y
+flatpak install flathub com.axosoft.GitKraken -y
 flatpak install flathub org.godotengine.Godot -y
 
 
 
 #Social
 flatpak install flathub com.gitlab.newsflash -y
+flatpak install flathub com.sindresorhus.Caprine -y
+flatpak install flathub io.gitlab.caveman250.headlines -y
 
 #Productivity
 flatpak install flathub com.todoist.Todoist -y
