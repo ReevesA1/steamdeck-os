@@ -50,3 +50,115 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 
+################################################################
+##                       Alias's                              ##
+################################################################
+alias ls='ls -lah --color=always --group-directories-first' # my preferred listing
+
+#Diagnonising
+alias jctl="journalctl -p 3 -xb"
+alias jf='journalctl -f'
+
+
+
+################################################################
+##                       Edit Dotfiles                       ##
+################################################################
+#zsh RC
+alias zshreload='exec zsh'
+alias editzsh='$EDITOR ~/.zshrc'
+
+
+#bash RC
+alias bashreload='source ~/.bashrc'
+alias editbash='$EDITOR ~/.bashrc'
+
+#neovim RC
+alias editnvimf='flatpak run io.neovim.nvim $HOME/.var/app/io.neovim.nvim/config/nvim/init.vim'
+
+
+
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+
+#Force Delete not empty directory
+alias frmdir="sudo rm -vrf"
+
+#Show how much room each directory is using
+alias space="du -sh *" 
+
+
+# switch between shells (alias's allready in arco linux)
+# I do not recommend switching default SHELL from bash to learn.
+alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+
+
+
+#Show all the history stored.
+alias history="$EDITOR $HISTFILE"
+
+#Directory Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+
+
+#Speed test 
+alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
+
+
+########################################################################
+##                            Default Apps                            ##
+#######################################################################
+
+# $EDITORS
+export EDITOR="code" #vscode works on mac and linux
+#export EDITOR="gnome-text-editor" #does not work on mac
+#export EDITOR="nvim" #gnome-text-editor is just easier, I forget neovim all the time
+
+# ETC
+export BROWSER="firefox"
+#export READER="zathura"
+#export TERMINAL="konsole"
+export VIDEO="vlc"
+#export IMAGE=""
+#export OPENER="xdg-open"
+#export WM="bspwm"
+
+export TERM="xterm-256color"  
+export COLORTERM="truecolor"
+
+
+################################################################
+##                       Vim                                  ##
+################################################################
+# Launch Neovim Flatpak
+alias nvimf='flatpak run io.neovim.nvim'
+
+########################################################################
+##                            Vim-mode                                ##
+#######################################################################
+set -o vi
+
+
+
+################################################################
+##                         cheat                              ##
+################################################################
+function cheat() { curl -m 7 "http://cheat.sh/$1"; }
+
+
