@@ -19,7 +19,7 @@ SAVEHIST=10000
 ################################################################
 ##                       Alias's                              ##
 ################################################################
-
+alias ls='ls -lah --color=always --group-directories-first' # my preferred listing
 
 #Diagnonising
 alias jctl="journalctl -p 3 -xb"
