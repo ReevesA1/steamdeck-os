@@ -24,7 +24,7 @@ SAVEHIST=10000
 #Diagnonising
 alias jctl="journalctl -p 3 -xb"
 alias jf='journalctl -f'
-alias topgradewtf='topgrade --dry-run'
+
 
 
 ################################################################
@@ -33,8 +33,6 @@ alias topgradewtf='topgrade --dry-run'
 #zsh RC
 alias zshreload='exec zsh'
 alias editzsh='$EDITOR ~/.zshrc'
-#Manjaro zshrc redirect
-#alias manzsh='nvim /usr/share/zsh/manjaro-zsh-config'
 
 
 #bash RC
@@ -43,14 +41,6 @@ alias editbash='$EDITOR ~/.bashrc'
 
 #neovim RC
 alias editnvimf='flatpak run io.neovim.nvim $HOME/.var/app/io.neovim.nvim/config/nvim/init.vim'
-
-
-################################################################
-##                       Vim                                  ##
-################################################################
-# Launch Neovim Flatpak
-alias nvimf='flatpak run io.neovim.nvim'
-
 
 
 
@@ -73,13 +63,11 @@ alias frmdir="sudo rm -vrf"
 alias space="du -sh *" 
 
 
-
 # switch between shells (alias's allready in arco linux)
 # I do not recommend switching default SHELL from bash to learn.
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
-
 
 
 
@@ -92,7 +80,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
-
 
 
 
@@ -122,6 +109,11 @@ export TERM="xterm-256color"
 export COLORTERM="truecolor"
 
 
+################################################################
+##                       Vim                                  ##
+################################################################
+# Launch Neovim Flatpak
+alias nvimf='flatpak run io.neovim.nvim'
 
 ########################################################################
 ##                            Vim-mode                                ##
