@@ -21,7 +21,11 @@ flatpak install flathub org.videolan.VLC -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub org.gabmus.whatip -y
 flatpak install flathub com.github.unrud.VideoDownloader -y
+
+#Coding
+
 flatpak install flathub org.godotengine.Godot -y
+
 
 
 #Social
