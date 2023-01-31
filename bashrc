@@ -53,13 +53,14 @@ SAVEHIST=10000
 ################################################################
 ##                       Alias's                              ##
 ################################################################
-alias ls='ls -lah --color=always --group-directories-first' # my preferred listing
+
 
 #Diagnonising
 alias jctl="journalctl -p 3 -xb"
 alias jf='journalctl -f'
 
-
+# reboot  to boot-manager
+alias boot-manager="sudo systemctl reboot --firmware-setup"
 
 ################################################################
 ##                       Edit Dotfiles                       ##
@@ -103,7 +104,8 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
-
+#ls
+alias ls='ls -lah --color=always --group-directories-first' # my preferred listing
 
 #Show all the history stored.
 alias history="$EDITOR $HISTFILE"
@@ -126,14 +128,12 @@ alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 #######################################################################
 
 # $EDITORS
-export EDITOR="code" #vscode works on mac and linux
-#export EDITOR="gnome-text-editor" #does not work on mac
-#export EDITOR="nvim" #gnome-text-editor is just easier, I forget neovim all the time
+export EDITOR="flatpak run com.visualstudio.code" #flatpak version
 
 # ETC
 export BROWSER="firefox"
 #export READER="zathura"
-#export TERMINAL="konsole"
+export TERMINAL="flatpak run com.raggesilver.BlackBox"
 export VIDEO="vlc"
 #export IMAGE=""
 #export OPENER="xdg-open"
