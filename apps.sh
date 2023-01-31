@@ -24,6 +24,7 @@ flatpak install flathub org.gabmus.whatip -y
 flatpak install flathub com.github.unrud.VideoDownloader -y
 flatpak install flathub com.raggesilver.BlackBox -y
 flatpak install flathub nz.mega.MEGAsync -y
+flatpak install flathub org.kde.index -y # file manager
 
 #Coding
 flatpak install flathub com.visualstudio.code -y
