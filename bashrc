@@ -134,7 +134,8 @@ alias code='flatpak run com.visualstudio.code'
 # ETC
 export BROWSER="firefox"
 #export READER="zathura"
-export TERMINAL="flatpak run com.raggesilver.BlackBox"
+export TERMINAL="konsole" # could not get blackbox to run from flatpak so made a alias for it
+alias blackbox="flatpak run com.raggesilver.BlackBox"
 export VIDEO="vlc"
 #export IMAGE=""
 #export OPENER="xdg-open"
