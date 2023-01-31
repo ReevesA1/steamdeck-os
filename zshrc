@@ -94,7 +94,8 @@ alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 #######################################################################
 
 # $EDITORS
-export EDITOR="flatpak run com.visualstudio.code" #flatpak version
+#export EDITOR="code" # Does not work with the flatpak version but I made a alias
+alias code='flatpak run com.visualstudio.code'
 
 # ETC
 export BROWSER="firefox"
