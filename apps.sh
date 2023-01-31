@@ -40,6 +40,7 @@ flatpak install flathub io.gitlab.caveman250.headlines -y
 #Productivity
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub com.github.marktext.marktext -y
+flatpak install flathub io.neovim.nvim -y
 
 #Game Launchers
 flatpak install flathub com.heroicgameslauncher.hgl -y
