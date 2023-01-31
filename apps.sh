@@ -28,6 +28,7 @@ flatpak install flathub org.kde.index -y # file manager
 
 #Coding
 flatpak install flathub com.visualstudio.code -y
+flatpak install flathub io.github.shiftey.Desktop -y
 flatpak install flathub com.axosoft.GitKraken -y
 flatpak install flathub org.godotengine.Godot -y
 
