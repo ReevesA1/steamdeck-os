@@ -4,12 +4,12 @@
 #Source: https://github.com/scawp/Steam-Deck.Force-SteamOS-On-Boot
 # Use at own Risk!
 
-#curl -sSL https://raw.githubusercontent.com/scawp/Steam-Deck.Force-SteamOS-On-Boot/main/curl_install.sh | bash
+#curl -sSL https://raw.githubusercontent.com/ReevesA1/steamdeck-os/main/Steam-Deck.Force-SteamOS-On-Boot.sh | bash
 
 #stop running script if anything returns an error (non-zero exit )
 set -e
 
-repo_url="https://raw.githubusercontent.com/scawp/Steam-Deck.Force-SteamOS-On-Boot/main"
+repo_url="https://raw.githubusercontent.com/scawp/ReevesA1/steamdeck-os/main/"
 
 tmp_dir="/tmp/scawp.SDFSOB.install"
 
