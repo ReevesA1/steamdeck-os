@@ -133,6 +133,7 @@ function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 ################################################################
 ##                       Distrobox                            ##
 ################################################################
+alias arch='distrobox enter Arch'
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/podman/bin:$PATH
 xhost +si:localuser:$USER
