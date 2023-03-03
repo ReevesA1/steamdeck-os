@@ -133,6 +133,23 @@ function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 ################################################################
 ##                       Distrobox                            ##
 ################################################################
+
+###
+# When a command does not exist on your container, it will be automatically executed back on the host:
+command_not_found_handle() {
+# this makes it so it don't run if not in a container
+  if [ ! -e /run/.containerenv ] && [ ! -e /.dockerenv ]; then
+    exit 127
+  fi
+  
+  distrobox-host-exec "${@}"
+}
+if [ -n "${ZSH_VERSION-}" ]; then
+  command_not_found_handler() {
+    command_not_found_handle "$@"
+}
+fi
+
 alias arch='distrobox enter Arch'
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/podman/bin:$PATH
