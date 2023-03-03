@@ -63,15 +63,20 @@ alias jf='journalctl -f'
 alias boot-manager="sudo systemctl reboot --firmware-setup"
 
 ################################################################
+##                       Source Shells                        ##
+################################################################
+alias sourceb='source ~/.bashrc'
+alias sourcez='exec zsh'
+
+
+################################################################
 ##                       Edit Dotfiles                       ##
 ################################################################
 #zsh RC
-alias zshreload='exec zsh'
 alias editzsh='$EDITOR ~/.zshrc'
 
 
 #bash RC
-alias bashreload='source ~/.bashrc'
 alias editbash='$EDITOR ~/.bashrc'
 
 #neovim RC
