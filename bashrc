@@ -189,7 +189,7 @@ if [ -n "${ZSH_VERSION-}" ]; then
 }
 fi
 
-alias arch='distrobox enter Arch'
+alias archbox='distrobox enter Arch'
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/podman/bin:$PATH
 xhost +si:localuser:$USER
