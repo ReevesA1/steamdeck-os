@@ -19,9 +19,30 @@ SAVEHIST=10000
 ################################################################
 ##                      Exports                               ##
 ################################################################
-export EDITOR="code" #vscode works on mac and linux
-export BROWSER="firefox"
-export TERM="xterm-256color" 
+export EDITOR="gnome-text-editor" #vscode works on mac and linux
+
+
+################################################################
+##                    Edit Dotfile                            ##
+################################################################
+#zsh RC
+alias editzsh='$EDITOR ~/.zshrc'
+#Manjaro zshrc redirect
+#alias manzsh='nvim /usr/share/zsh/manjaro-zsh-config'
+
+
+#bash RC
+alias editbash='$EDITOR ~/.bashrc'
+
+#neovim RC
+alias editnvim='nvim $HOME/Dotfiles/Neovim/init.vim'
+alias editnvimf='flatpak run io.neovim.nvim $HOME/.var/app/io.neovim.nvim/config/nvim/init.vim'
+
+#Neofetch RC
+alias editneofetch='nano $HOME/.config/neofetch/config.conf'
+
+#Powershell
+alias editpwsh='$EDITOR ~/.config/powershell/profile.ps1'
 
 
 ################################################################
