@@ -49,6 +49,12 @@ HISTFILE=~/.rocket-bash-history
 HISTSIZE=10000
 SAVEHIST=10000
 
+################################################################
+##                      Exports                               ##
+################################################################
+export EDITOR="code" #vscode works on mac and linux
+export BROWSER="firefox"
+export TERM="xterm-256color" 
 
 ################################################################
 ##                       Alias's                              ##
